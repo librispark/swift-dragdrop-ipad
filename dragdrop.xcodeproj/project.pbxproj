@@ -12,6 +12,7 @@
 		3FA6C5401D0F52C60074FA88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA6C53E1D0F52C60074FA88 /* Main.storyboard */; };
 		3FA6C5421D0F52C60074FA88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA6C5411D0F52C60074FA88 /* Assets.xcassets */; };
 		3FA6C5451D0F52C60074FA88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA6C5431D0F52C60074FA88 /* LaunchScreen.storyboard */; };
+		3FA6C54D1D0F86CE0074FA88 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 3FA6C54C1D0F86CE0074FA88 /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3FA6C5411D0F52C60074FA88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA6C5441D0F52C60074FA88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA6C5461D0F52C60074FA88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA6C54C1D0F86CE0074FA88 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				3FA6C53C1D0F52C60074FA88 /* ViewController.swift */,
 				3FA6C53E1D0F52C60074FA88 /* Main.storyboard */,
 				3FA6C5411D0F52C60074FA88 /* Assets.xcassets */,
+				3FA6C54C1D0F86CE0074FA88 /* www */,
 				3FA6C5431D0F52C60074FA88 /* LaunchScreen.storyboard */,
 				3FA6C5461D0F52C60074FA88 /* Info.plist */,
 			);
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA6C54D1D0F86CE0074FA88 /* www in Resources */,
 				3FA6C5451D0F52C60074FA88 /* LaunchScreen.storyboard in Resources */,
 				3FA6C5421D0F52C60074FA88 /* Assets.xcassets in Resources */,
 				3FA6C5401D0F52C60074FA88 /* Main.storyboard in Resources */,
@@ -253,6 +257,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.librispark.dragdrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -264,6 +269,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.librispark.dragdrop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

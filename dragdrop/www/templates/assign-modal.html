@@ -1,0 +1,32 @@
+<ion-modal-view ng-controller="ModalCtrl" class="assign-modal-view">
+
+    <div style="position:absolute;top:170px;left:-3px;background-color:transparent;border:1px solid teal;width:25%;height:150px;border-radius:10px;">
+    </div>
+
+    <div ng-repeat="row in droppedObjects" class="row">
+	    
+	    <div ng-repeat="n in droppedObjects[$index] track by $index" class="col col-10" ng-drop="layoutIsEditable" ng-drop-success="onDropComplete($data,$event,$index,$parent.$index)" style="justify-content:center;align-items:center;display:flex; {{ (droppedObjects[$parent.$index][$index][0].class.indexOf('horizontal')!==-1)?'flex-direction:row;':'flex-direction:column;'; }}">
+	        <!-- <span class="title">#{{ $index+$parent.$index*10 }}</span> -->
+
+	        <div ng-class="obj.class" ng-init="printIndxs($index,$parent.$index,$parent.$parent.$index)" ng-repeat="obj in droppedObjects[$parent.$index][$index]" ng-drag="layoutIsEditable" ng-drag-data="obj"
+	             ng-drag-success="onDragSuccess($data,$event,$index,$parent.$index,$parent.$parent.$index)" ng-center-anchor="{{centerAnchor}}">
+                    <i ng-if="obj.seats!==2" class="icon ion-person table-person-{{obj.side1}} table-person-{{obj.side1}}-spot0"></i>
+                    <i ng-if="obj.seats===6" class="icon ion-person table-person-{{obj.side1}} table-person-{{obj.side1}}-spot1"></i>
+                    <i class="icon ion-person table-person-{{obj.side1}} table-person-{{obj.side1}}-spot2"></i>
+                    {{obj.name}}{{ $parent.$index+$parent.$parent.$index*10 }}
+                    <i ng-if="obj.seats!==2" class="icon ion-person table-person-{{obj.side2}} table-person-{{obj.side2}}-spot0"></i>
+                    <i ng-if="obj.seats===6" class="icon ion-person table-person-{{obj.side2}} table-person-{{obj.side2}}-spot1"></i>
+                    <i class="icon ion-person table-person-{{obj.side2}} table-person-{{obj.side2}}-spot2"></i>
+	        </div>
+
+	    </div>
+
+    </div>
+
+
+    <button ng-click="closeModal()" class="button button-teal" style="position:absolute;top:-7px;right:-7px;background-color:white;border:2px solid teal;min-height:5px;line-height:initial;">	close
+    </button>
+
+    
+
+</ion-modal-view>

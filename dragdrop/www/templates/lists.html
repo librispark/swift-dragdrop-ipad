@@ -1,0 +1,47 @@
+﻿
+<ion-view view-title="Delect" class="tiled-content-rests">
+    
+    <ion-content>
+
+        <ion-list class="animate-ripple">
+        
+            <ion-item ng-repeat="row in restuarant2xRows" class="row">
+              <div ng-repeat="item in row | orderBy:distance" class="col">
+                <div class="list card" ng-show="(item.img)" style="border-radius:8px;overflow:visible;">
+                  <div class="item" style="border-radius:8px;border:2px solid teal;position:relative;overflow:visible;height:120px;padding:0;">
+                    <div class="col col-25" style="height:100%;border-right:1px solid black; padding: 10px 0;">
+                      <div class="row">
+                        <div class="col"></div>
+                        <img src="http://cdn.fashionmagazine.com/wp-content/uploads/2014/06/how-to-take-the-perfect-profile-picture-imjennim-tinder-600x600.jpg" class="avatar">
+                        <div class="col"></div>
+                      </div>
+                      <div class="row" style="margin-top:5px;text-align:center;">
+                        <div class="col">
+                          Stephanie
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col"></div>
+                    <button ng-click="openModal()" class="button button-teal" style="position:absolute;top:-2px;right:-7px;background-color:white;border:2px solid teal;">Assign to table
+                    </button>
+                    <div style="position:absolute;bottom:-8px;right:-9px;background-color:transparent;padding:0 5px;">
+                      <i class="icon ion-ios-close-outline" style="background-color:white;font-size:40px;display:inline-block;background-color:transparent;"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ion-item>
+            <br/><br/><br/><br/>
+        </ion-list>
+
+    </ion-content>
+
+      <!-- <div class="bar bar-footer" style="height:70px;display:none;">
+        <div class="row">
+          <div class="col"></div>
+          <button class="button button-teal">Join Delectable</button>
+          <div class="col"></div>
+        </div>
+      </div> -->
+
+</ion-view>

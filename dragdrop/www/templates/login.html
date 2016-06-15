@@ -1,0 +1,42 @@
+<ion-view view-title="Login" style="background-color:white;">
+    <div class="row row-center" style="height:100%;">
+        <div class="col"></div>
+        <div class="col col-66">
+            <ion-list class="animate-ripple">
+                <div class="row">
+                    <div class="col">
+                        <ion-item class="row">
+                            <div class="item item-image">
+                                <img src="img/icon.png">
+                            </div>
+                        </ion-item>
+                    </div>
+                    <div class="col col-66">
+                        <form ng-submit="login()">
+                            <ion-item class="row" style="border-left:3px solid teal;padding-left:30px;">
+                                <div class="list list-inset" style="border:3px solid teal;width:100%;">
+                                    <label class="item item-input">
+                                        <input type="text" placeholder="Username" ng-model="data.username" style="font-size:22px;">
+                                    </label>
+                                </div>
+                            </ion-item>
+                            <ion-item class="row" style="border-left:3px solid teal;padding-left:30px;">
+                                <div class="list list-inset" style="border:3px solid teal;width:100%;margin-top:10px;">
+                                    <label class="item item-input">
+                                        <input type="password" placeholder="Password" ng-model="data.password" style="font-size:22px;">
+                                    </label>
+                                </div>
+                            </ion-item>
+                            <ion-item class="row padding-right" style="border-left:3px solid teal;padding-left:40px;">
+                                <button input type="submit" class="button button-block button-large" style="background-color:teal;color:white;">
+                                    Login
+                                </button>
+                            </ion-item>
+                        </form>
+                    </div>
+                </div>
+            </ion-list>
+        </div>
+        <div class="col"></div>
+    </div>
+</ion-view>
